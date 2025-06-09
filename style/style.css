@@ -1,0 +1,464 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* Хедер */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Поисковая строка в хедере */
+.search-header {
+  display: flex;
+  justify-content: center;
+}
+
+.search-header input {
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  background-color: #E3F3FF;
+}
+
+.search-header button {
+  border: none;
+  background-color: #E3F3FF;
+  border-radius: 0 25px 25px 0;
+  padding-right: 10px;
+}
+.sun-button {
+  border: 2px solid #FFFFFF;
+  width: 60px;
+height: 60px;
+background: #000000;
+}
+
+
+/* Hero-секция */
+.hero {
+  background: #e6f2ff;
+  height: 590px;
+}
+
+.text {
+  margin-left: 100px;
+}
+
+.hero h1 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 80px;
+  letter-spacing: 0;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.backfon {
+  position: absolute;
+  right: 100px;
+  top: 270px;
+}
+
+/* Поисковая строка (другая) */
+.search-bar {
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  width: 560px;
+  height: 80px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  background-color: #FFFFFF;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.search-bar button {
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 0 25px 25px 0;
+  padding-right: 30px;
+}
+
+/* Заголовки секций */
+.section2,
+.section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.section2 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.section3 {
+  font-size: 50px;
+  color: #000;
+  line-height: 50px;
+}
+
+.section4 {
+  font-size: 50px;
+  color: #EEFAFF;
+  line-height: 50px;
+}
+
+.section5 {
+  font-family: Figma Hand;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #000;
+  gap: 10px;
+}
+
+.section {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+/* Прокручиваемый блок */
+.scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 129px;
+}
+
+.scroll-button {
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #dcdcdc;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-item {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  scroll-snap-align: center;
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Блок с квадратом и стрелками */
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  border: 3px solid #000;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.square {
+  width: 600px;
+  height: 300px;
+  border: 10px solid #D4FFFF;
+}
+
+/* Аватары */
+.avatars {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  margin-left: 700px;
+}
+
+.avatar img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6ec6ff;
+}
+
+/* Блок с вопросами */
+.div1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.question {
+  margin-top: 50px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 30px;
+  height: 30px;
+}
+
+.username {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.question-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 20px solid #D4FCFE;
+  padding: 20px;
+}
+
+.card-content h3 p {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+}
+
+/* Кнопка "Ещё вопросы" */
+.more-questions-button {
+  width: 200px;
+  height: 37.5px;
+  padding: 10px 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  background-color: #C5E7FF;
+  border: 2px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-questions-button:hover {
+  background-color: #D9F1FF;
+  color: #007BFF;
+}
+
+.btn-quest {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.content {
+  margin-top: 200px;
+}
+
+/* Футер */
+.footer-section {
+  background-color: #C5E7FF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.left-content h2 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.left-content p {
+  font-family: Figma Hand;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.right-content .ask-question-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.right-content .ask-question-button:hover {
+  background-color: #D9F1FF;
+  color: #007BFF;
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+}
+
+.contact p,
+.prav p {
+  padding: 10px;
+}
+
+/* Тёмная тема */
+body.dark-mode {
+  background-color: #030951;
+}
+
+/* Пример изменения хедера и других блоков */
+body.dark-mode header,
+body.dark-mode .question-card,
+body.dark-mode .scroll-container {
+  background: #030951;
+  border-color: #333;
+}
+body.dark-mode .logo{
+  color: white;
+}
+body.dark-mode nav a {
+  color: #f0f0f0;
+}
+body.dark-mode .hero{
+  background-color: #033B63;
+  color: white;
+}
+body.dark-mode .scroll-container{
+  background-color: #14033C;
+  color: white;
+}
+body.dark-mode .scroll-item, .section, .section2, .section3, .section5, .username{
+  color: white;
+}
+body.dark-mode .section4{
+  color: #525557;
+}
+body.dark-mode .avatar{
+  background-color: #FFFFFF;
+}
+body.dark-mode .question-card{
+  border: 20px solid #D4FCFE;
+  color: #FFFFFF;
+}
+body.dark-mode .footer-section{
+  background-color: #14033C;
+  color: #FFFFFF;
+}
+body.dark-mode footer {
+  background-color: #000328;
+  color: #FFFFFF;
+}
+body.dark-mode .sun-button {
+  background-color: #ffffff;
+  border-color: #000000;
+}
+body.dark-mode .a1{
+  color: #000;
+}
+body.dark-mode .sun-button img {
+  filter: invert(1);
+}
