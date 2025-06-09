@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/question.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Где домашка?</div>
+        <div class="search-header">
+            <input type="text" placeholder="Какой у тебя вопрос?">
+            <button><img src="img/lupa.png" alt=""></button>
+          </div>
+        <nav>
+          <a href="#">Войти</a>
+          <a href="#">Зарегистрироваться</a>
+          <a class="a1" href="#" style="background: #d9eeff; padding: 0.5rem 1rem; border-radius: 5px;">Задать вопрос</a>
+        </nav>
+        <button id="toggle-theme" class="sun-button">
+            <img src="img/sun.png" alt="">
+          </button>
+      </header>
+
+      <section class="section">
+        <p>Напишите свой <br>
+            вопрос и мы вам <br>
+            поможем</p>
+      </section>
+
+      
+        <div class="form-container">
+          <form id="question-form">
+            <!-- Название вопроса -->
+            <div class="form-group">
+              <input type="text" id="title" name="title" placeholder="Введите название вопроса" required/>
+            </div>
+      
+            <!-- Описание вопроса -->
+            <div class="form-group">
+              <textarea
+                id="body"
+                name="body"
+                placeholder="Напишите свой вопрос здесь (кратко и ясно)"
+                required
+              ></textarea>
+            </div>
+      
+            <!-- Категория -->
+            <div class="form-group">
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Выберите категорию</option>
+                <option value="math">Математика</option>
+                <option value="rus">Русский язык</option>
+                <option value="literature">Литература</option>
+                <option value="chemistry">Химия</option>
+                <option value="informatics">Информатика</option>
+                <option value="physics">Физика</option>
+                <option value="Kubanovedine">Кубановедение</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+      
+            <!-- Кнопка отправки -->
+            <button type="submit" class="submit-button">Опубликовать вопрос</button>
+          </form>
+        </div>
+      
+
+        <script src="js/nightshift.js"></script>
+</body>
+</html>

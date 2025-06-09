@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/lk.css">
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Создать аккаунт</h1>
+			
+			<input type="text" placeholder="Имя" />
+			<input type="email" placeholder="Почта" />
+			<input type="password" placeholder="Пароль" />
+			<button style="color: #1a1133;">Зарегистрироваться</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Войти</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Забыли пароль?</a>
+			<button style="color: #1a1133;">Войти</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Добро пожаловать!</h1>
+				<p>Чтобы оставаться на связи с нами, пожалуйста, войдите в систему, указав свои персональные данные.</p>
+				<button class="ghost" id="signIn" style="color: #1a1133;">Войти</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Привет, Друг!</h1>
+				<p>Введите свои персональные данные и начните изучать с нами</p>
+				<button class="ghost" id="signUp" style="color: #1a1133;">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/lk.js"></script>
+</body>
+</html>
